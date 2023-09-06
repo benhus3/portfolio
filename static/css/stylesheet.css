@@ -1,0 +1,52 @@
+body {
+    background-image: url("../images/Curve_Line.svg");
+}
+
+.purp-text {
+    color: #9617B3;
+}
+
+.page-heading {
+    color: #9617B3;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5rem;
+    margin-top: 6%;
+    width: fit-content;
+}
+
+.purp-outline {
+    border: 1px solid #9617B3;
+}
+
+.light-text {
+    color: #D3D3D3; 
+    /* opacity: 0.3; */
+}
+
+/* .op-background {
+    background-color: #5f8ebd;
+    opacity: 1;
+} */
+
+/*about me section*/
+/* .container {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/*create the two column list design for skills*/
+/* ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+.skills-list {
+    
+}
+
+.skills-list li {
+    color: #D3D3D3;
+}
