@@ -1,5 +1,15 @@
 body {
-    background-image: url("../images/Curve_Line.svg");
+    overflow-x: hidden;
+    margin: 0; /*need these for when background image is inside div to remove the gap*/
+    padding: 0;
+}
+
+body, head {
+    /* font-family: 'Helvetica', 'Arial', sans-serif; */
+    /* font-family: 'Tahoma'; */
+    /* font-family: 'Peace Sans' sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .purp-text {
@@ -7,46 +17,107 @@ body {
 }
 
 .page-heading {
-    color: #9617B3;
+    /* color: #9617B3; */
     margin-left: auto;
     margin-right: auto;
     font-size: 5rem;
-    margin-top: 6%;
     width: fit-content;
+    font-weight: 400;
+    margin-bottom: 15%;
 }
 
-.purp-outline {
-    border: 1px solid #9617B3;
+.title-outline {
+    border: 1px solid #4932DA;
+    border-style: none solid solid none;
 }
 
-.light-text {
-    color: #D3D3D3; 
-    /* opacity: 0.3; */
-}
 
-/* .op-background {
-    background-color: #5f8ebd;
-    opacity: 1;
-} */
 
 /*about me section*/
-/* .container {
-    margin-left: auto;
-    margin-right: auto;
-} */
+.skills-list li {
+    color: rgb(73, 50, 218)
+}
 
-/*create the two column list design for skills*/
-/* ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: auto;
-    margin-right: auto;
-  } */
+.background {
+    background-color: (#5f8ebd, 0.7);
+    background-color: rgba(95, 142, 189, 0.5);
+}
 
-.skills-list {
+/*font stuff*/
+
+.light-text {
+    color: #D9EBFF;  
+}
+
+.orange-text {
+    color: #E73635;
+}
+
+.blue-text {
+    color: rgb(73, 50, 218);
+}
+
+.sec-2 h1 {
+    font-size: 3.7rem;
+}
+
+.sec-2 p, .sec-2 li {
+    font-size: 1.2rem;
+}
+
+/*snap scrolling*/
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
     
 }
 
-.skills-list li {
-    color: #D3D3D3;
+.sec-1 {
+    background-image: url("../images/Curve_Line.svg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: center center;
+    background-attachment: fixed; 
 }
+
+.sec-2 {
+    background-image: url("../images/Colored_Shapes.svg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: center center;
+    background-attachment: fixed; 
+}
+
+/*scroll bar design*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    /* background-color: #e7e7e7; */
+    border: 1px solid #cacaca;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* border-radius: 8px; */
+    /* background-color: #9617B3; */
+    background-color: rgb(73, 50, 218);
+
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    /* background: #bd0fe4;  */
+    background-color: rgb(86, 60, 255);
+
+}
+
+
