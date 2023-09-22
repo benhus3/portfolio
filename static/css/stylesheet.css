@@ -181,7 +181,7 @@ section {
 
 
 /*small screens (desktop first approach as the the site is unlikely to be viewed on mobile*/
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:950px) {
     .card-effect {
         transform: translateX(-50%) scale(1);
     }
