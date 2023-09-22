@@ -223,9 +223,6 @@ section {
     overflow: hidden;
 }
 
-.card-front {
-
-}
 
 .card-back {
     transform: rotateY(180deg);
@@ -270,6 +267,9 @@ section {
 
 
 /*sec-4*/
+.sec-4 {
+    height: 130vh;
+}
 
 .sec-4 h1 {
     padding: 5rem;
@@ -281,3 +281,15 @@ h2 {
     padding: 1rem;
     font-size: 3rem;
 }
+
+.sec-4 img {
+    width: 100%;
+}
+
+.sec-4 p {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+
