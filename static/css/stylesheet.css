@@ -184,11 +184,16 @@ section {
 @media only screen and (max-width:950px) {
     .card-effect {
         transform: translateX(-50%) scale(1);
+        top: 12%;
+    }
+
+    .page-heading {
+        width: 80%;
     }
 
     .card-wrapper {
-        width:  28rem;
-        height: 34rem;
+        width:  35rem;
+        height: 50rem;
         
     }
 }
@@ -201,7 +206,7 @@ section {
 
     .card-wrapper {
         width:  20rem;
-        height: 28rem;
+        height: 30rem;
         
     }
 
