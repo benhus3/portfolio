@@ -71,6 +71,7 @@ html {
 
 section {
     height: 100vh;
+    width: 100%;
     scroll-snap-align: start;
     
 }
@@ -192,6 +193,20 @@ section {
     }
 }
 
+/*small screens (desktop first approach as the the site is unlikely to be viewed on mobile*/
+@media only screen and (max-width:600px) {
+    .card-effect {
+        transform: translateX(-50%) scale(1);
+    }
+
+    .card-wrapper {
+        width:  20rem;
+        height: 28rem;
+        
+    }
+
+}
+
 
 
 .card-effect-remove {
@@ -268,7 +283,8 @@ section {
 
 /*sec-4*/
 .sec-4 {
-    height: 130vh;
+    /* height: 130vh; */
+    height: fit-content;
 }
 
 .sec-4 h1 {
@@ -286,7 +302,7 @@ h2 {
     width: 100%;
 }
 
-.sec-4 p {
+.sec-4 .row p {
     background-color: white;
     padding: 1rem;
     border-radius: 0.8rem;
