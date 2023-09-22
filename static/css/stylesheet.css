@@ -130,8 +130,10 @@ section {
 }
 
 .card-wrapper {
-    width: 20rem;
-    height: 24rem;
+    /* width: 20rem;
+    height: 24rem; */
+    width:40rem;
+    height: 36rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -143,6 +145,8 @@ section {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+
+     
 }
 
 .card-front, .card-back {
@@ -164,11 +168,11 @@ section {
 
 
 .card-effect {
-    transform: translateX(-50%) scale(1.8); 
+    transform: translateX(-50%) scale(1.4); 
     transition: transform 1.5s ease-in-out;
     -webkit-transition: transform 1.5s ease-in-out;
     position: fixed;
-    top: 40%;
+    top: 22%;
     left: 50%; 
     z-index: 999;
     opacity: 1;
@@ -176,9 +180,15 @@ section {
 
 
 /*small screens (desktop first approach as the the site is unlikely to be viewed on mobile*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:800px) {
     .card-effect {
-        transform: translateX(-50%) scale(1.2);
+        transform: translateX(-50%) scale(1);
+    }
+
+    .card-wrapper {
+        width:  28rem;
+        height: 34rem;
+        
     }
 }
 
@@ -194,7 +204,14 @@ section {
 .hide-card {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 1.8s, opacity 1.8s linear;
+    
+}
+
+
+.show-card {
+    visibility: visible;
+    opacity: 1;
 }
 
 .card {
@@ -214,6 +231,23 @@ section {
     transform: rotateY(180deg);
 }
 
+.card img {
+    width: 100%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-back img {
+    width: 100%;
+    height: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
 
 /*sec 3*/
 .sec-3 {
@@ -223,7 +257,7 @@ section {
 
 .sec-3 h1 {
     padding: 5rem;
-    margin-bottom: 5rem;
+    padding-bottom: 0rem;
 }
 
 .card-title, .card-text {
