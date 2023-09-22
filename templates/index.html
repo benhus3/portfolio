@@ -21,7 +21,11 @@
     <!--Font awesome kit code to get icons-->
     <script src="https://kit.fontawesome.com/9fbd840f6d.js" crossorigin="anonymous"></script> 
 
-    <link href="https://fonts.cdnfonts.com/css/peace-sans" rel="stylesheet">
+    <!-- <link href="https://fonts.cdnfonts.com/css/peace-sans" rel="stylesheet"> -->
+
+    <script src="../static/js/scripts.js"></script>
+
+
                 
 
     <title>Portfolio</title>
@@ -29,7 +33,7 @@
     <!--navbar-->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top p-3 fs-5">
         <div class="container-fluid">
-            <span class="fs-2 navbar-text me-3 orange-text" href="">My Portfolio</span>
+            <span class="fs-2 navbar-text me-3 light-text" href="">My Portfolio</span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class=""><i class="fa-solid fa-bars blue-text" aria-hidden="true"></i></span>   <!--use fa bars to be able to change colour-->
             </button>
@@ -40,10 +44,10 @@
                     <a class="nav-link blue-text" href="#sec-2">About me</a> 
                 </li>
                 <li class="nav-item text-right">
-                    <a class="nav-link blue-text" href="">University</a>  
+                    <a class="nav-link blue-text" href="#sec-3">University</a>  
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link blue-text" href="">Additional Work</a>  
+                    <a class="nav-link blue-text" href="#sec-4">Additional Work</a>  
                 </li> 
                 
                 </ul>
@@ -52,7 +56,7 @@
     </nav>
 
     <section class="row align-items-center sec-1" id="sec-1">
-        <div class="page-heading title-outline p-sm-5 p-3 orange-text">
+        <div class="page-heading outline p-sm-5 p-3 light-text">
             Ben Hussey
         </div>
     </section>
@@ -64,10 +68,10 @@
     
     <section class="row align-items-center sec-2" id="sec-2">
         <div class="container text-start mt-5 p-5">
-            <div class="row p-5">
-                <div class="col-2"></div> <!--spacer-->
-                <div class="col-4">
-                    <h1 class="orange-text">About me</h1>
+            <div class="row p-sm-5">
+                <div class="col-xxl-2"></div> <!--spacer-->
+                <div class="col-xxl-4 col-12">
+                    <h1 class="light-text">About me</h1>
                     <p class="text-start blue-text mt-3">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis, dolores explicabo voluptatibus debitis nostrum? Aperiam, magnam aut? Rem, sint.
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eum provident neque doloribus corrupti maiores nulla. Inventore doloribus vitae dolores.
@@ -75,14 +79,14 @@
                     </p>
                 </div>
 
-                <div class="col-6"></div> <!--spacer-->
+                <div class="col-xxl-6"></div> <!--spacer-->
             </div>
 
-            <div class="row p-5">
-                <div class="col-7"></div> <!--spacer-->
+            <div class="row p-xxl-5 mt-1">
+                <div class="col-xxl-7"></div> <!--spacer-->
 
-                <div class="col-4">
-                    <h1 class="orange-text">Tools & Technologies</h1>
+                <div class="col-xxl-4 col-12">
+                    <h1 class="light-text">Tools & Technologies</h1>
                     <ul class="list-group list-group-flush bg-transparent skills-list mt-3">
                         <li class="list-group-item bg-transparent">Python</li>
                         <li class="list-group-item bg-transparent">HTML & CSS</li>
@@ -93,16 +97,185 @@
 
                 </div>
 
-                <div class="col-2"></div> <!--spacer-->
+                <div class="col-xxl-2"></div> <!--spacer-->
 
 
             </div>
         </div>
     </section>
 
-    <section class="row align-items-center">
-        <p class="light-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore vitae beatae repudiandae accusantium debitis in consequatur perspiciatis. Eligendi, mollitia illo!</p>
+
+    <section class="sec-3" id="sec-3">
+        <h1 class="light-text text-center">University Projects</h1>
+
+        <div class="row cards-container">
+
+            <div class="col-xl-4 col-md-6 col-12 mb-5 column-class">
+                <div class="card-effect-remove card-wrapper">
+                    <div class="card-inner" id="card1" style="z-index: 1;">
+                        <div class="card card-front" id="front">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <img src="..\static\images\tennis_home.png" class="card-img-top" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-back" id="back">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Back</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-4 col-md-6 col-12 mb-5">
+                <div class="card-wrapper card-effect-remove">
+                    <div class="card-inner" id="card2" style="z-index: 1;">
+                        <div class="card card-front" id="front">
+                            <img src="..\static\images\cinema_booking_home.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-back" id="back">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Back</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-4 col-md-6 col-12 mb-5">
+                <div class="card-wrapper card-effect-remove">
+                    <div class="card-inner" id="card2">
+                        <div class="card card-front" id="front">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-back" id="back">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Back</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-xl-4 col-md-6 col-12 mb-5">
+                <div class="card-wrapper card-effect-remove">
+                    <div class="card-inner" id="card1">
+                        <div class="card card-front" id="front">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-back" id="back">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Back</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-4 col-md-6 col-12 mb-5">
+                <div class="card-wrapper card-effect-remove">
+                    <div class="card-inner" id="card2">
+                        <div class="card card-front" id="front">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-back" id="back">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Back</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-4 col-md-6 col-12 mb-5">
+                <div class="card-wrapper card-effect-remove">
+                    <div class="card-inner" id="card2">
+                        <div class="card card-front" id="front">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-back" id="back">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Back</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
     </section>
+
+    <section class="sec-4" id="sec-4">
+        <h1 class="light-text text-center">Additional Work</h1>
+        
+        <div class="row text-center" style="margin-left: auto; margin-right: auto; width: 90%">
+            <div class="col-md-5 col-12 outline">
+                <h2 class="light-text">Football Analytics</h1>
+                    <img src="..." class="" alt="...">
+                    <p class="text-start blue-text mt-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, incidunt.
+                    </p>
+            </div>
+
+            <div class="col-md-2"></div> <!--spacer-->
+
+
+            <div class="col-md-5 col-12 outline">
+                <h2 class="light-text">School Sport Manager</h1>
+                    <img src="..." class="" alt="...">
+                    <p class="text-start blue-text mt-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, incidunt.
+                    </p>
+            </div>
+        </div>
+            
+    </section>
+
     
 </body>
 

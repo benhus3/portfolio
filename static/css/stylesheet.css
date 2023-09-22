@@ -5,12 +5,11 @@ body {
 }
 
 body, head {
-    /* font-family: 'Helvetica', 'Arial', sans-serif; */
-    /* font-family: 'Tahoma'; */
-    /* font-family: 'Peace Sans' sans-serif; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
+
 
 .purp-text {
     color: #9617B3;
@@ -26,7 +25,7 @@ body, head {
     margin-bottom: 15%;
 }
 
-.title-outline {
+.outline {
     border: 1px solid #4932DA;
     border-style: none solid solid none;
 }
@@ -57,7 +56,7 @@ body, head {
     color: rgb(73, 50, 218);
 }
 
-.sec-2 h1 {
+.sec-2 h1, .sec-3 h1, .sec-4 h1 {
     font-size: 3.7rem;
 }
 
@@ -84,8 +83,8 @@ section {
     background-attachment: fixed; 
 }
 
-.sec-2 {
-    background-image: url("../images/Colored_Shapes.svg");
+.sec-2, .sec-3, .sec-4 {
+    background-image: url("../images/Curve_Line.svg");
     background-repeat: no-repeat;
     background-size: fill;
     background-position: center center;
@@ -99,7 +98,7 @@ section {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    border-radius: 8px;
+    /* border-radius: 8px; */
     /* background-color: #e7e7e7; */
     border: 1px solid #cacaca;
 }
@@ -121,3 +120,130 @@ section {
 }
 
 
+/*card flip on click*/
+/*maybe on click, the cards flip and get bigger and centered?*/
+
+.cards-container {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.card-wrapper {
+    width: 20rem;
+    height: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.is-flipped {
+    transform: rotateY(180deg);
+}
+
+
+
+.card-effect {
+    transform: translateX(-50%) scale(1.8); 
+    transition: transform 1.5s ease-in-out;
+    -webkit-transition: transform 1.5s ease-in-out;
+    position: fixed;
+    top: 40%;
+    left: 50%; 
+    z-index: 999;
+    opacity: 1;
+}
+
+
+/*small screens (desktop first approach as the the site is unlikely to be viewed on mobile*/
+@media only screen and (max-width: 600px) {
+    .card-effect {
+        transform: translateX(-50%) scale(1.2);
+    }
+}
+
+
+
+.card-effect-remove {
+    transform: scale(1);
+    transition: transform 1.5s ease-in-out;
+    -webkit-transition: transform 1.5s ease-in-out;
+    z-index: 2;
+}
+
+.hide-card {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.card-front {
+
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+
+/*sec 3*/
+.sec-3 {
+    height: fit-content;
+}
+
+
+.sec-3 h1 {
+    padding: 5rem;
+    margin-bottom: 5rem;
+}
+
+.card-title, .card-text {
+    color: rgb(73, 50, 218);
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+
+/*sec-4*/
+
+.sec-4 h1 {
+    padding: 5rem;
+    margin-bottom: 3rem;
+}
+
+
+h2 {
+    padding: 1rem;
+    font-size: 3rem;
+}
