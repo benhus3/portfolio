@@ -92,7 +92,7 @@ section {
 .sec-1 {
     background-image: url("../images/Curve_Line.svg");
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed; 
 }
@@ -100,7 +100,7 @@ section {
 .sec-2, .sec-3, .sec-4 {
     background-image: url("../images/Curve_Line.svg");
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed; 
 }
@@ -220,8 +220,11 @@ section {
     .card-wrapper {
         width:  20rem;
         height: 30rem;
-        
     }
+
+    /* body, .sec-1, .sec-2, .sec-3, .sec-4 {
+        background-attachment: scroll;
+    } */
 
 }
 
