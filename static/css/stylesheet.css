@@ -1,12 +1,14 @@
 html {
     overflow-x: hidden;
+    margin: 0;
 }
+
+
 
 body {
     overflow-x: hidden;
     margin: 0; /*need these for when background image is inside div to remove the gap*/
     padding: 0;
-    position: relative;
 
     background-image: url("../images/Curve_Line.svg");
     background-repeat: no-repeat;
@@ -59,13 +61,13 @@ body, head {
     color: #D9EBFF;  
 }
 
-.orange-text {
-    color: #E73635;
-}
+
 
 .blue-text {
     color: rgb(73, 50, 218);
 }
+
+
 
 .sec-2 h1, .sec-3 h1, .sec-4 h1 {
     font-size: 3.7rem;
@@ -77,20 +79,16 @@ body, head {
 
 /*snap scrolling*/
 
-/*only scroll snap on big screens*/
-@media only screen and (min-width:1000px) {
-    html {
-        scroll-snap-type: y mandatory;
-    }
 
-    section {
-        scroll-snap-align: start;
-    }
+
+
+html {
+    scroll-snap-type: y mandatory;
 }
-
 
 section {
     height: 100vh;
+    scroll-snap-align: start;
     
 }
 
@@ -149,10 +147,8 @@ section {
 }
 
 .card-wrapper {
-    /* width: 20rem;
-    height: 24rem; */
     width:38rem;
-    height: 36rem;
+    height: 42rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -197,9 +193,12 @@ section {
     opacity: 1;
 }
 
+.card-body li {
+    color: rgb(73, 50, 218);
+}
 
 /*small screens (desktop first approach as the the site is unlikely to be viewed on mobile*/
-@media only screen and (max-width:950px) {
+@media only screen and (max-width:1200px) {
     .card-effect {
         transform: translateX(-50%) scale(1);
         top: 12%;
@@ -212,7 +211,6 @@ section {
     .card-wrapper {
         width:  35rem;
         height: 50rem;
-        
     }
 }
 
@@ -223,12 +221,19 @@ section {
     }
 
     .card-wrapper {
-        width:  20rem;
-        height: 30rem;
+        width:  25rem;
+        height: 40rem;
+    }
+    
+    #small-screen-image {
+        height: 16rem;
     }
 
+ 
 
 }
+
+
 
 
 
@@ -299,8 +304,13 @@ section {
     color: rgb(73, 50, 218);
 }
 
+
 .card-title {
     font-size: 2rem;
+}
+
+.orange-text {
+    color: #fa5c7e;
 }
 
 
