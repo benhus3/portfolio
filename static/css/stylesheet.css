@@ -210,7 +210,11 @@ section {
 
     .card-wrapper {
         width:  35rem;
-        height: 50rem;
+        height: 40rem;
+    }
+
+    #small-screen-image {
+        height: 20rem;
     }
 }
 
@@ -222,7 +226,7 @@ section {
 
     .card-wrapper {
         width:  25rem;
-        height: 40rem;
+        height: 42rem;
     }
     
     #small-screen-image {
@@ -230,6 +234,20 @@ section {
     }
 
  
+
+}
+
+@media only screen and (max-width:430px) {
+
+    .card-wrapper {
+        width:  100%;
+    }
+    
+    #small-screen-image {
+        height: 16rem;
+    }
+
+    
 
 }
 
@@ -342,3 +360,15 @@ h2 {
 }
 
 
+/*footer*/
+.footer {
+    padding: 1rem;
+    background-color: #D9EBFF;
+    color: rgb(73, 50, 218);
+    margin-bottom: 0;
+}
+
+.linkedin {
+    /* float: right;
+    justify-content: center; */
+}
