@@ -74,9 +74,16 @@
                 <div class="col-xxl-4 col-12">
                     <h1 class="light-text fs-4 fs-sm-1">About me</h1>
                     <p class="text-start blue-text mt-3 fs-5 fs-sm-2">
-                        Hi, I'm Ben, a current third year Computer Science student studying at the University of the West of England. I'm highly driven and organised,
-                        with my natural passion for analysing and solving problems leading me to pursue a career in this field. 
-                        This is my, created from scratch, portfolio which hopefully gives you some idea as to my skills and interests.
+                        Hi, I'm Ben, a First Class Honours graduate in Computer Science from the University of the West of England.
+                        I'm highly driven, organised and passionate about solving problems using code and data.
+                    </p>
+
+                    <p class="text-start blue-text mt-3 fs-5 fs-sm-2">
+                        I've developed full-stack web applications, worked with cloud infrastructure and explored machine learning both academically and professionally.
+                    </p>
+
+                    <p class="text-start blue-text mt-3 fs-5 fs-sm-2">
+                        This portfolio I've created, showcases my technical ability and enthusiasm for software development and data-driven problem solving.
                     </p>
                 </div>
 
@@ -92,12 +99,14 @@
                             <div class="col-6 col-sm-12">
                                 <ul class="list-group list-group-flush bg-transparent skills-list mt-3">
                                     <li class="list-group-item bg-transparent">Python</li>
+                                    <li class="list-group-item bg-transparent">AWS</li>
+                                    <li class="list-group-item bg-transparent">Docker</li>
                                     <li class="list-group-item bg-transparent">HTML & CSS</li>
-                                    <li class="list-group-item bg-transparent">Flask</li>
                                 </ul>
                             </div>
                         <div class="col-6 col-sm-12">
                             <ul class="list-group list-group-flush bg-transparent skills-list mt-3">
+                                <li class="list-group-item bg-transparent">Flask</li>
                                 <li class="list-group-item bg-transparent">Bootstrap</li>
                                 <!-- <li class="list-group-item bg-transparent">Numpy, Pandas, Matplotlib, Tensorflow, Sklearn</li> -->
                                 <li class="list-group-item bg-transparent">MongoDB, MySQL</li>
@@ -124,6 +133,120 @@
             <div class="col-xxl-6 col-12 mb-5 column-class">
                 <div class="card-effect-remove card-wrapper show-card">
                     <div class="card-inner" id="card1" style="z-index: 1;">
+                        <div class="card card-front" id="front">
+                            <div class="card-body">
+                                <h5 class="card-title orange-text">Academic Timetable Generator</h5>
+                                <img src="static\images\timetable1.png" class="small-screen-image" alt="..." style="height: 40%;" id="small-screen-image">
+                                <p class="card-text fs-sm-4 fs-5">A custom, modified gentic algorithm built into a web based application used automatically generate academic timetables.</p>
+
+                                <p class="card-text fs-4 orange-text">Technologies used:</p>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                Python Flask</li>
+                                            <li class="list-group-item">
+                                                HTML & CSS</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                Javascript & AJAX</li>
+                                            <li class="list-group-item">
+                                                Bootstrap</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                MongoDB</li>
+                                            
+                                        </ul>
+                                            
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card card-back" id="back">
+                            <img src="static\images\timetable2.png" class="card-img-top p-2" alt="..." id="small-screen-image">
+                            <div class="card-body"> <!--needs rewording!!-->
+                            <p class="card-text">My final year project was dedicated to the creation of a system which could enable the automatic generation of whole-school timetables, 
+                                utilising a custom-made genetic algorithm. The scope of the project included the implementation of a full stack web-based application and database, 
+                                along with a genetic algorithm. This algorithm then used a school's information to automatically produce and optimise a timetable, aligning with the school's 
+                                parameters. This work was then documentated in a report surpassing 15 thousand words.
+                                </p> <!--tech used on the front-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-6 col-12 mb-5">
+                <div class="card-wrapper card-effect-remove show-card">
+                    <div class="card-inner" id="card4">
+                        <div class="card card-front" id="front">
+                            <div class="card-body">
+                            <h5 class="card-title orange-text">Educational Sign Language Detection Game</h5>
+                            <img src="static\images\ML_hands.png" class="card-img-top" alt="..." style="height: 40%;" id="small-screen-image">
+                            <p class="card-text fs-sm-4 fs-5">A machine learning based, education, sign language detection game.</p>
+
+                            <p class="card-text fs-4 orange-text mb-0">Technologies used:</p>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                Keras CNN</li>
+                                            <li class="list-group-item">
+                                                Google Mediapipe</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                OpenCV</li>
+                                            <li class="list-group-item">
+                                                Matplotlib</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                Scikit-learn</li>
+                                            <li class="list-group-item">
+                                                Seaborn</li>
+                                            
+                                        </ul>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-back" id="back">
+                            <img src="static\images\ML_graph.png" class="card-img-top" alt="..." style="width: 85%; height:50%; padding:1rem;">
+                            <div class="card-body">
+                            <p class="card-text">I worked as part of a team containing three members, to create a model which could identify a number of different sign language
+                                gestures being made by the user and picked up by their webcam. This model was then used to create an educational game where the system would give the user a 
+                                word to sign, and if the user correctly performed the symbol using their hands, they would gain a point.
+
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xxl-6 col-12 mb-5 column-class">
+                <div class="card-effect-remove card-wrapper show-card">
+                    <div class="card-inner" id="card2" style="z-index: 1;">
                         <div class="card card-front" id="front">
                             <div class="card-body">
                                 <h5 class="card-title orange-text">Tennis Tournament Site</h5>
@@ -181,7 +304,7 @@
             
             <div class="col-xxl-6 col-12 mb-5">
                 <div class="card-wrapper card-effect-remove show-card">
-                    <div class="card-inner" id="card2" style="z-index: 1;">
+                    <div class="card-inner" id="card3" style="z-index: 1;">
                         <div class="card card-front" id="front">
                             <div class="card-body">
                             <h5 class="card-title orange-text">Cinema Booking System</h5>
@@ -227,68 +350,13 @@
             </div>
 
 
-            <div class="col-xxl-6 col-12 mb-5">
-                <div class="card-wrapper card-effect-remove show-card">
-                    <div class="card-inner" id="card3">
-                        <div class="card card-front" id="front">
-                            <div class="card-body">
-                            <h5 class="card-title orange-text">Educational Sign Language Detection Game</h5>
-                            <img src="static\images\ML_hands.png" class="card-img-top" alt="..." style="height: 40%;" id="small-screen-image">
-                            <p class="card-text fs-sm-4 fs-5">A machine learning based, education, sign language detection game.</p>
-
-                            <p class="card-text fs-4 orange-text mb-0">Technologies used:</p>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">
-                                                Keras CNN</li>
-                                            <li class="list-group-item">
-                                                Google Mediapipe</li>
-                                            
-                                        </ul>
-                                    </div>
-                                    <div class="col-4">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">
-                                                OpenCV</li>
-                                            <li class="list-group-item">
-                                                Matplotlib</li>
-                                            
-                                        </ul>
-                                    </div>
-                                    <div class="col-4">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">
-                                                Scikit-learn</li>
-                                            <li class="list-group-item">
-                                                Seaborn</li>
-                                            
-                                        </ul>
-                                            
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card-back" id="back">
-                            <img src="static\images\ML_graph.png" class="card-img-top" alt="..." style="width: 85%; height:50%; padding:1rem;">
-                            <div class="card-body">
-                            <p class="card-text">I worked as part of a team containing three members, to create a model which could identify a number of different sign language
-                                gestures being made by the user and picked up by their webcam. This model was then used to create an educational game where the system would give the user a 
-                                word to sign, and if the user correctly performed the symbol using their hands, they would gain a point.
-
-                            </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
 
 
             <div class="col-xxl-6 col-12 mb-5">
                 <div class="card-wrapper card-effect-remove show-card">
-                    <div class="card-inner" id="card4">
+                    <div class="card-inner" id="card5">
                         <div class="card card-front" id="front">
                             <div class="card-body">
                             <h5 class="card-title orange-text">Web App for a Hotel</h5>
@@ -335,7 +403,7 @@
             
             <div class="col-xxl-6 col-12 mb-5">
                 <div class="card-wrapper card-effect-remove show-card">
-                    <div class="card-inner" id="card5">
+                    <div class="card-inner" id="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM">
                         <div class="card card-front" id="front">
                             <div class="card-body">
                             <h5 class="card-title orange-text">Genetic Algorithm from Scratch</h5>
